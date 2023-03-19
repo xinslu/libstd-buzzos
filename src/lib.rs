@@ -1,14 +1,5 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+#![no_std]
+#![no_main]
+#![feature(abi_x86_interrupt)]
+#![feature(const_mut_refs)]
+#![feature(alloc_error_handler)]
